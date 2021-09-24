@@ -1,0 +1,30 @@
+span{
+    display:inline;
+    font-size: 18px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+div a{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a h2{
+    text-decoration: none;
+}
+
+.todo-li:hover{
+    z-index: 2;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+body{
+    background-color: brown;
+}

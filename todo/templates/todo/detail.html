@@ -1,0 +1,19 @@
+{% extends "todo/base.html" %}
+
+
+{% block title %}
+<title>Detail</title>
+{% endblock title %}
+
+{% block body %}
+    <br>
+    <h2 style="padding: 0 3.5vw;">{{ todo.text }}</h2>
+    
+    <div style="padding: 1.2vw 3.5vw;"><a href="{% url 'todo:update_item' todo.id %}"><span>Edit</span></a> | 
+        <a href="{% url 'todo:delete_item' todo.id %}"><span>Delete</span></a>
+    </div>
+    <br>
+
+
+{% endblock body %}
+

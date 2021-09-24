@@ -1,0 +1,23 @@
+{% extends "todo/base.html" %}
+{% block title %}
+<title>Edit</title>
+{% endblock title %}
+
+
+{% block body %}
+<div class="container">
+    <br>
+    <h2>Edit todo</h2>
+    <form action="" method="post">
+        <div class="form-group">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input name="update" type="submit" value="Update item" class="btn btn-primary">
+            <br>
+        </div>
+    </form>
+</div>
+<br>
+{% endblock body %}
+
+

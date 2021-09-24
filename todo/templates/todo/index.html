@@ -1,0 +1,17 @@
+{% extends "todo/base.html" %}
+{% block title %}
+<title>Index</title>
+{% endblock title %}
+
+{% block body %}
+    
+    {% if todo_list %}
+        <ol class="list-group list-group-numbered">
+            {% for todo in todo_list %}
+                <a href="{% url 'todo:detail' todo.id %}"><li class="list-group-item todo-li">{{ todo.text }}</li></a>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <p>No todos are added.</p>
+    {% endif %}
+{% endblock body %}

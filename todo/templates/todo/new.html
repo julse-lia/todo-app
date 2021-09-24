@@ -1,0 +1,20 @@
+{% extends "todo/base.html" %}
+{% block title %}
+<title>New</title>
+{% endblock title %}
+
+{% block body %}
+  <div class="container">
+    <br>
+    <h2>New todo</h2>
+    <form action="" method="post">{% csrf_token %}
+      <div class="form-group">
+        {{ form.as_p }}
+        <input type="submit" value="Save" class="btn btn-success" style="width: 100px;"/>
+      </div>
+    </form>
+  </div>
+  <br>
+    
+    
+{% endblock body %}
